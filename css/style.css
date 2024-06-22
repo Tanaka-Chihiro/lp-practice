@@ -54,17 +54,17 @@ header{
   width: 100%;
   position: absolute;
   top: 0px;
-  padding-top: 400px;
-  padding-bottom: 400px;
+  margin-top: 400px;
+  margin-bottom: 400px;
 }
 .main-copy{
   text-align: center;
   font-size: 65px;
   font-weight: 700;
   color: #6ba7eb;
+  margin-bottom: 30px;
 }
 .sub-copy{
-  margin-top: 30px;
   text-align: center;
   font-size: 40px;
   font-weight: 700;
@@ -174,13 +174,8 @@ header{
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.sns-width{
-  width: 185px;
-  margin: 0 auto;
-}
 .sns-box{
   display: flex;
-  justify-content: space-between;
 }
 .sns-icon{
   color: #8c8c8c;
@@ -189,6 +184,13 @@ header{
   margin-bottom: 25px;
   overflow:hidden;
 }
+.sns-li{
+  margin-left: 185px;
+}
+.sns-li:last-child{
+  margin-right: 0;
+}
+
 .sns-icon:hover{
   background: #fff;
   transition-duration: 0.5s;
