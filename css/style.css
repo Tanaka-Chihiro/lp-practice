@@ -86,7 +86,6 @@ header{
 .news-contents{
   width: 60%;
 }
-
 .news-contents p{
   font-size: 15px;
   line-height: 18px;
@@ -97,8 +96,8 @@ header{
 /* SKILLS */
 .skills{
   background: #fff;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 .icon-flex{
   display: flex;
@@ -190,11 +189,11 @@ header{
 .sns-li:last-child{
   margin-right: 0;
 }
-
 .sns-icon:hover{
   background: #fff;
   transition-duration: 0.5s;
 }
+
 /* FOOTER */
 footer{
   background:  #cfd8dc;
@@ -205,6 +204,3 @@ footer p{
   font-size: 13px;
   letter-spacing: 0.5px;
 }
-/* TAB....................... */
-
-/* SP.........................*/
