@@ -44,18 +44,19 @@ header{
 }
 
 /* Keyvisual */
-.relative{
-  position: relative;
+#main-bg{
+  background-image: url(../images/keyvisual/keyvisual.jpg);
+  /* min-height: 100vh; */
 }
 .key-visual{
-  width: 100%;
+  background-size: cover;
+  background-position: center top;
 }
 .title{
   width: 100%;
-  position: absolute;
   top: 0px;
-  margin-top: 400px;
-  margin-bottom: 400px;
+  padding-top: 400px;
+  padding-bottom: 400px;
 }
 .main-copy{
   text-align: center;
@@ -105,7 +106,9 @@ header{
 }
 .icon{
   margin-right: 100px;
-  margin-bottom: 100px;
+}
+.icon:nth-of-type(n+4){
+  margin-top: 100px;
 }
 .icon:nth-child(3n){
   margin-right: 0px;
@@ -203,4 +206,117 @@ footer p{
   text-align: right;
   font-size: 13px;
   letter-spacing: 0.5px;
+}
+
+/* TAB....................... */
+@media(max-width:1199px){
+  .inner{
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+
+  /* Keyvisual */
+  .title{
+    width: 100%;
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+
+  /* NEWS */
+  .news{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .flex{
+    display: block;
+    text-align: center;
+  }
+  .news-contents{
+    width: 100%;
+  }
+
+  /* SKILLS */
+  .icon-flex{
+    display: block;
+    width: 100%;
+  }
+  .icon-flex a{
+    display: block;
+    text-align: center;
+  }
+  .icon{
+    margin: 0 auto;
+  }
+  .icon:nth-child(3n){
+    margin-bottom: 80px;
+  }
+
+  /* SNS */
+  .sns-box{
+    display: flex;
+    justify-content: space-around;
+  }
+  .sns-li{
+    margin-left: initial;
+  }
+}
+
+
+/* SP.........................*/
+@media(max-width:767px){
+  .inner{
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+
+
+  /* Keyvisual */
+  .title{
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .main-copy{
+    font-size: 40px;
+  }
+  .sub-copy{
+    font-size: 30px;
+  }
+
+  /* NEWS */
+
+  /* SKILLS */
+
+  /* PLAN */
+  .plan-list th{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .plan-list tr{
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  /* SNS */
+  .sns{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .sns-box{
+    display: block;
+    text-align: center;
+  }
+  .sns-li{
+    margin: 50px 15px 50px 15px;
+  }
+  .sns-li:last-child{
+    margin-right: 15px;
+  }
+
 }
