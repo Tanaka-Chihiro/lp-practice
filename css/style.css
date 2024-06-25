@@ -20,6 +20,9 @@ header{
   margin: 15px 0;
   color: #777;
 }
+.nav_SP{
+  display: none;
+}
 .contact-btn{
   margin: 15px;
   padding: 15px;
@@ -250,8 +253,11 @@ footer p{
   .icon{
     margin: 0 auto;
   }
-  .icon:nth-child(3n){
-    margin-bottom: 80px;
+  .icon:nth-of-type(n+4){
+    margin-top: 0px;
+  }
+  .icon:nth-child(3n+1){
+    margin-top: 80px;
   }
 
   /* SNS */
@@ -273,7 +279,70 @@ footer p{
   }
 
   /* HEADER */
-
+/* .contact-btn{
+  display: none;
+}
+.nav_SP{
+  display: block;
+}
+.drawer_hidden{
+  display: none;
+}
+.drawer_open{
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  cursor: pointer;
+}
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after{
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #333;
+  transition: 0.5s;
+  position: absolute;
+}
+.drawer_open span:before{
+  bottom: 8px;
+}
+.drawer_open span:after{
+  top: 8px;
+}
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+.nav_content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 99;
+  background: #fff;
+  transition: .5s;
+}
+.nav_list {
+  list-style: none;
+}
+#drawer_input:checked ~ .nav_content {
+  left: 0;
+} */
 
   /* Keyvisual */
   .title{
@@ -317,6 +386,9 @@ footer p{
   }
   .sns-li:last-child{
     margin-right: 15px;
+  }
+  .sns-icon{
+    font-size: 30px;
   }
 
 }
